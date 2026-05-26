@@ -1,0 +1,17 @@
+@CopilotRegisterDemo.Api_HostAddress = http://localhost:5035
+
+POST {{CopilotRegisterDemo.Api_HostAddress}}/api/user/register
+Content-Type: application/json
+
+{
+  "username": "alice",
+  "email": "alice@example.com",
+  "password": "secret123"
+}
+
+###
+
+GET {{CopilotRegisterDemo.Api_HostAddress}}/api/user/1
+Accept: application/json
+
+###
