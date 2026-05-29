@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using CopilotRegisterDemo.Api.Exceptions;
 using CopilotRegisterDemo.Api.Models;
 using CopilotRegisterDemo.Api.Services;
 
@@ -61,7 +62,7 @@ public class UserServiceTests
             Password = "secret456"
         });
 
-        var exception = Assert.Throws<InvalidOperationException>(action);
+        var exception = Assert.Throws<DuplicateUserException>(action);
 
         Assert.Equal("A user with this email already exists.", exception.Message);
     }
@@ -79,5 +80,33 @@ public class UserServiceTests
         });
 
         Assert.Throws<ValidationException>(action);
+    }
+
+    [Fact]
+    public void DeleteById_Removes_User_When_User_Exists()
+    {
+        var service = new UserService();
+        var registeredUser = service.Register(new RegisterRequest
+        {
+            Username = "alice",
+            Email = "alice@example.com",
+            Password = "secret123"
+        });
+
+        service.DeleteById(registeredUser.Id);
+
+        var result = service.GetById(registeredUser.Id);
+        Assert.Null(result);
+    }
+
+    [Fact]
+    public void DeleteById_Throws_When_User_Does_Not_Exist()
+    {
+        var service = new UserService();
+
+        var action = () => service.DeleteById(404);
+
+        var exception = Assert.Throws<UserNotFoundException>(action);
+        Assert.Equal("User not found.", exception.Message);
     }
 }

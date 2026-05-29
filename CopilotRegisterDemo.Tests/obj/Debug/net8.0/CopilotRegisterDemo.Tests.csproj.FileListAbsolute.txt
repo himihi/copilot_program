@@ -106,3 +106,4 @@ E:\IsMySelf\MyProgram\copilot_program\CopilotRegisterDemo.Tests\obj\Debug\net8.0
 E:\IsMySelf\MyProgram\copilot_program\CopilotRegisterDemo.Tests\obj\Debug\net8.0\CopilotRegisterDemo.Tests.pdb
 E:\IsMySelf\MyProgram\copilot_program\CopilotRegisterDemo.Tests\obj\Debug\net8.0\CopilotRegisterDemo.Tests.genruntimeconfig.cache
 E:\IsMySelf\MyProgram\copilot_program\CopilotRegisterDemo.Tests\obj\Debug\net8.0\ref\CopilotRegisterDemo.Tests.dll
+E:\IsMySelf\MyProgram\copilot_program\CopilotRegisterDemo.Tests\obj\Debug\net8.0\CopilotRegisterDemo.Tests.sourcelink.json

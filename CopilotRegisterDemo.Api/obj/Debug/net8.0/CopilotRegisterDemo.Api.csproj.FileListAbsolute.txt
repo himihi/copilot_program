@@ -26,3 +26,4 @@ E:\IsMySelf\MyProgram\copilot_program\CopilotRegisterDemo.Api\obj\Debug\net8.0\r
 E:\IsMySelf\MyProgram\copilot_program\CopilotRegisterDemo.Api\obj\Debug\net8.0\CopilotRegisterDemo.Api.pdb
 E:\IsMySelf\MyProgram\copilot_program\CopilotRegisterDemo.Api\obj\Debug\net8.0\CopilotRegisterDemo.Api.genruntimeconfig.cache
 E:\IsMySelf\MyProgram\copilot_program\CopilotRegisterDemo.Api\obj\Debug\net8.0\ref\CopilotRegisterDemo.Api.dll
+E:\IsMySelf\MyProgram\copilot_program\CopilotRegisterDemo.Api\obj\Debug\net8.0\CopilotRegisterDemo.Api.sourcelink.json
